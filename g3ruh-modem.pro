@@ -1,4 +1,4 @@
-update=Wed 19 Jul 2017 06:06:27 AM PDT
+update=Sat 29 Jul 2017 03:48:58 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/dave/proj/boards/kicad/mystuff
+LibDir=/home/dave/proj/boards/kicad/mystuff;/home/dave/proj/src/kicad/dg_misc
 [eeschema/libraries]
 LibName1=power
 LibName2=device

@@ -1,0 +1,189 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ttl_ieee
+LIBS:dg_misc
+LIBS:g3ruh-modem-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 12
+Title "G3RUH 9600 bps modem for TNC-2"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74HC86 U6
+U 1 1 5983FF38
+P 7350 5050
+F 0 "U6" H 7350 4950 50  0000 C CNN
+F 1 "74HC86" H 7400 5150 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 7350 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn54hc86" H 7350 5050 50  0001 C CNN
+	1    7350 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L 74164 U4
+U 1 1 5983FF3F
+P 5500 4150
+F 0 "U4" H 5500 4400 50  0000 C CNN
+F 1 "74HC164" H 5500 4250 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 5500 4150 79  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc164.pdf" H 5500 4150 79  0001 C CNN
+	1    5500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR026
+U 1 1 5983FF46
+P 4950 3800
+F 0 "#PWR026" H 4950 3650 50  0001 C CNN
+F 1 "+5V" H 4965 3973 50  0000 C CNN
+F 2 "" H 4950 3800 50  0001 C CNN
+F 3 "" H 4950 3800 50  0001 C CNN
+	1    4950 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 4850
+NoConn ~ 6050 4750
+NoConn ~ 6050 4200
+NoConn ~ 6050 4350
+NoConn ~ 6050 4450
+NoConn ~ 6050 4550
+NoConn ~ 6050 4650
+Text Notes 8400 3150 2    394  ~ 79
+ZERO CROSSING\nDETETCTOR
+Wire Wire Line
+	4950 3900 4950 3800
+Wire Wire Line
+	4650 4250 4950 4250
+Wire Wire Line
+	4800 4150 4950 4150
+Wire Wire Line
+	4650 4000 4950 4000
+Wire Wire Line
+	4800 4150 4800 5150
+Wire Wire Line
+	6050 4950 6750 4950
+Text HLabel 4650 4000 0    60   Input ~ 0
+TX_CLOCK
+Wire Wire Line
+	4800 5150 6750 5150
+Connection ~ 4800 4250
+Text HLabel 4650 4250 0    60   Input ~ 0
+RX_FILTER
+Text HLabel 8300 5050 2    60   Output ~ 0
+ZERO_CROSSING
+Wire Wire Line
+	7950 5050 8300 5050
+$Comp
+L C C8
+U 1 1 598A050D
+P 6400 4250
+F 0 "C8" H 6550 4300 50  0000 L CNN
+F 1 ".1uF" H 6550 4200 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6438 4100 50  0001 C CNN
+F 3 "" H 6400 4250 50  0001 C CNN
+F 4 "20% Monolithic" H 6400 4250 60  0001 C CNN "Type"
+	1    6400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR027
+U 1 1 598A051D
+P 6400 4000
+F 0 "#PWR027" H 6400 3850 50  0001 C CNN
+F 1 "+5V" H 6415 4173 50  0000 C CNN
+F 2 "" H 6400 4000 50  0001 C CNN
+F 3 "" H 6400 4000 50  0001 C CNN
+	1    6400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 598A05AA
+P 6400 4500
+F 0 "#PWR028" H 6400 4250 50  0001 C CNN
+F 1 "GND" H 6400 4350 50  0000 C CNN
+F 2 "" H 6400 4500 50  0001 C CNN
+F 3 "" H 6400 4500 50  0001 C CNN
+	1    6400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4100 6400 4000
+Wire Wire Line
+	6400 4400 6400 4500
+$Comp
+L C C9
+U 1 1 598A0DC8
+P 7850 5550
+F 0 "C9" H 8000 5600 50  0000 L CNN
+F 1 ".1uF" H 8000 5500 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 7888 5400 50  0001 C CNN
+F 3 "" H 7850 5550 50  0001 C CNN
+F 4 "20% Monolithic" H 7850 5550 60  0001 C CNN "Type"
+	1    7850 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 598A0DD7
+P 7850 5800
+F 0 "#PWR029" H 7850 5550 50  0001 C CNN
+F 1 "GND" H 7850 5650 50  0000 C CNN
+F 2 "" H 7850 5800 50  0001 C CNN
+F 3 "" H 7850 5800 50  0001 C CNN
+	1    7850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR030
+U 1 1 598A0DEE
+P 7850 5300
+F 0 "#PWR030" H 7850 5150 50  0001 C CNN
+F 1 "+5V" H 7865 5473 50  0000 C CNN
+F 2 "" H 7850 5300 50  0001 C CNN
+F 3 "" H 7850 5300 50  0001 C CNN
+	1    7850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5400 7850 5300
+Wire Wire Line
+	7850 5700 7850 5800
+$EndSCHEMATC

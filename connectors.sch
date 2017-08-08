@@ -1,0 +1,285 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ttl_ieee
+LIBS:dg_misc
+LIBS:g3ruh-modem-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 12
+Title "G3RUH 9600 bps modem for TNC-2"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C96ABC P4
+U 1 1 5985AA2B
+P 6050 3750
+F 0 "P4" V 6325 3750 50  0000 C CNN
+F 1 "C96ABC" V 6415 3750 50  0001 C CNN
+F 2 "Connectors:C96ABCMC" H 6050 3750 50  0001 C CNN
+F 3 "" H 6050 3750 50  0001 C CNN
+	1    6050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X05 P3
+U 1 1 5985AA33
+P 5700 4700
+F 0 "P3" H 5778 4741 50  0000 L CNN
+F 1 "CONN_01X05" H 5778 4650 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 5700 4700 50  0001 C CNN
+F 3 "" H 5700 4700 50  0001 C CNN
+F 4 "RADIO" H 5900 4650 60  0000 C CNN "Label"
+	1    5700 4700
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 5900 4700
+$Comp
+L CONN_01X03 P1
+U 1 1 5985AA3E
+P 2200 4600
+F 0 "P1" H 2277 4648 50  0000 L CNN
+F 1 "CONN_01X03" H 2278 4550 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2200 4600 50  0001 C CNN
+F 3 "" H 2200 4600 50  0001 C CNN
+F 4 "POWER" H 2277 4549 60  0000 L CNN "Label"
+	1    2200 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P2
+U 1 1 5985AA46
+P 4050 4750
+F 0 "P2" H 4128 4798 50  0000 L CNN
+F 1 "CONN_01X06" H 4128 4700 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 4050 4750 50  0001 C CNN
+F 3 "" H 4050 4750 50  0001 C CNN
+F 4 "DIGITAL" H 4128 4699 60  0000 L CNN "Label"
+	1    4050 4750
+	-1   0    0    -1  
+$EndComp
+Text Notes 3800 1950 0    394  ~ 79
+CONNECTORS
+$Comp
+L GND #PWR098
+U 1 1 5985AA54
+P 6000 5000
+F 0 "#PWR098" H 6000 4750 50  0001 C CNN
+F 1 "GND" H 6005 4827 50  0000 C CNN
+F 2 "" H 6000 5000 50  0001 C CNN
+F 3 "" H 6000 5000 50  0001 C CNN
+	1    6000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR099
+U 1 1 5985AA5A
+P 6650 4600
+F 0 "#PWR099" H 6650 4350 50  0001 C CNN
+F 1 "GND" H 6655 4427 50  0000 C CNN
+F 2 "" H 6650 4600 50  0001 C CNN
+F 3 "" H 6650 4600 50  0001 C CNN
+	1    6650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0100
+U 1 1 5985AA60
+P 3200 4700
+F 0 "#PWR0100" H 3200 4450 50  0001 C CNN
+F 1 "GND" H 3205 4527 50  0000 C CNN
+F 2 "" H 3200 4700 50  0001 C CNN
+F 3 "" H 3200 4700 50  0001 C CNN
+	1    3200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0101
+U 1 1 5985AA66
+P 5050 4600
+F 0 "#PWR0101" H 5050 4350 50  0001 C CNN
+F 1 "GND" H 5055 4427 50  0000 C CNN
+F 2 "" H 5050 4600 50  0001 C CNN
+F 3 "" H 5050 4600 50  0001 C CNN
+	1    5050 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4900 6000 4900
+Wire Wire Line
+	6000 4900 6000 5000
+Wire Wire Line
+	6050 4800 5900 4800
+Wire Wire Line
+	6050 4500 5900 4500
+Wire Wire Line
+	6650 4600 5900 4600
+Wire Wire Line
+	2400 4700 3200 4700
+Wire Wire Line
+	2400 4500 3200 4500
+Wire Wire Line
+	4400 4500 4250 4500
+Wire Wire Line
+	2400 4600 2550 4600
+Wire Wire Line
+	4250 4600 5050 4600
+Wire Wire Line
+	3200 4500 3200 4700
+Connection ~ 3200 4700
+NoConn ~ 1300 3250
+NoConn ~ 1400 3250
+NoConn ~ 1500 3250
+NoConn ~ 1600 3250
+NoConn ~ 1700 3250
+NoConn ~ 1800 3250
+NoConn ~ 1900 3250
+NoConn ~ 2000 3250
+NoConn ~ 2100 3250
+NoConn ~ 2200 3250
+NoConn ~ 2300 3250
+NoConn ~ 2400 3250
+NoConn ~ 2500 3250
+NoConn ~ 2600 3250
+NoConn ~ 2700 3250
+NoConn ~ 2800 3250
+NoConn ~ 2900 3250
+NoConn ~ 3000 3250
+NoConn ~ 3100 3250
+NoConn ~ 3200 3250
+NoConn ~ 3300 3250
+NoConn ~ 3400 3250
+NoConn ~ 3500 3250
+NoConn ~ 3600 3250
+NoConn ~ 3700 3250
+NoConn ~ 3800 3250
+NoConn ~ 3900 3250
+NoConn ~ 4000 3250
+NoConn ~ 4100 3250
+NoConn ~ 4200 3250
+NoConn ~ 4300 3250
+NoConn ~ 4400 3250
+NoConn ~ 4500 3250
+NoConn ~ 4600 3250
+NoConn ~ 4700 3250
+NoConn ~ 4800 3250
+NoConn ~ 4900 3250
+NoConn ~ 5000 3250
+NoConn ~ 5100 3250
+NoConn ~ 5200 3250
+NoConn ~ 5300 3250
+NoConn ~ 5400 3250
+NoConn ~ 5500 3250
+NoConn ~ 5600 3250
+NoConn ~ 5700 3250
+NoConn ~ 5800 3250
+NoConn ~ 5900 3250
+NoConn ~ 6000 3250
+NoConn ~ 6100 3250
+NoConn ~ 6200 3250
+NoConn ~ 6300 3250
+NoConn ~ 6400 3250
+NoConn ~ 6500 3250
+NoConn ~ 6600 3250
+NoConn ~ 6700 3250
+NoConn ~ 6800 3250
+NoConn ~ 6900 3250
+NoConn ~ 7000 3250
+NoConn ~ 7100 3250
+NoConn ~ 7200 3250
+NoConn ~ 7300 3250
+NoConn ~ 7400 3250
+NoConn ~ 7500 3250
+NoConn ~ 7600 3250
+NoConn ~ 7700 3250
+NoConn ~ 7800 3250
+NoConn ~ 7900 3250
+NoConn ~ 8000 3250
+NoConn ~ 8100 3250
+NoConn ~ 8200 3250
+NoConn ~ 8300 3250
+NoConn ~ 8400 3250
+NoConn ~ 8500 3250
+NoConn ~ 8600 3250
+NoConn ~ 8700 3250
+NoConn ~ 8800 3250
+NoConn ~ 8900 3250
+NoConn ~ 9000 3250
+NoConn ~ 9100 3250
+NoConn ~ 9200 3250
+NoConn ~ 9300 3250
+NoConn ~ 9400 3250
+NoConn ~ 9500 3250
+NoConn ~ 9600 3250
+NoConn ~ 9700 3250
+NoConn ~ 9800 3250
+NoConn ~ 9900 3250
+NoConn ~ 10000 3250
+NoConn ~ 10100 3250
+NoConn ~ 10200 3250
+NoConn ~ 10300 3250
+NoConn ~ 10400 3250
+NoConn ~ 10500 3250
+NoConn ~ 10600 3250
+NoConn ~ 10700 3250
+NoConn ~ 10800 3250
+Text HLabel 2550 4600 2    60   Output ~ 12
+POWER
+Text HLabel 4400 4500 2    60   Output ~ 12
+TX_DATA
+Text HLabel 4400 4700 2    60   Output ~ 12
+TX_CLOCK
+Text HLabel 4400 4800 2    60   Input ~ 12
+RX_DATA
+Text HLabel 4400 4900 2    60   Input ~ 12
+DCD
+Text HLabel 4400 5000 2    60   Input ~ 12
+RX_CLOCK
+Text HLabel 6050 4500 2    60   Input ~ 12
+TX_AUDIO
+Text HLabel 6050 4800 2    60   Output ~ 12
+RX_AUDIO
+Wire Wire Line
+	4250 4700 4400 4700
+Wire Wire Line
+	4400 4800 4250 4800
+Wire Wire Line
+	4250 4900 4400 4900
+Wire Wire Line
+	4400 5000 4250 5000
+$EndSCHEMATC

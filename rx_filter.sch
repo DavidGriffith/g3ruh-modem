@@ -1,0 +1,307 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ttl_ieee
+LIBS:dg_misc
+LIBS:g3ruh-modem-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 12
+Title "G3RUH 9600 bps modem for TNC-2"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C25
+U 1 1 59836A5E
+P 4400 4400
+F 0 "C25" V 4550 4450 50  0000 R CNN
+F 1 ".1uF" V 4250 4450 50  0000 R CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4438 4250 50  0001 C CNN
+F 3 "" H 4400 4400 50  0001 C CNN
+F 4 "20% Monolithic" V 4400 4400 60  0001 C CNN "Type"
+	1    4400 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R16
+U 1 1 59836A65
+P 4750 4650
+F 0 "R16" H 4820 4696 50  0000 L CNN
+F 1 "100K" H 4820 4605 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4680 4650 50  0001 C CNN
+F 3 "" H 4750 4650 50  0001 C CNN
+	1    4750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 59836A6C
+P 5000 4400
+F 0 "R17" V 4793 4400 50  0000 C CNN
+F 1 "82K" V 4884 4400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4930 4400 50  0001 C CNN
+F 3 "" H 5000 4400 50  0001 C CNN
+	1    5000 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R18
+U 1 1 59836A73
+P 5500 4400
+F 0 "R18" V 5293 4400 50  0000 C CNN
+F 1 "39K" V 5384 4400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 4400 50  0001 C CNN
+F 3 "" H 5500 4400 50  0001 C CNN
+	1    5500 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L C C27
+U 1 1 59836A7B
+P 5500 4050
+F 0 "C27" V 5752 4050 50  0000 C CNN
+F 1 ".001uF" V 5661 4050 50  0000 C CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P10.00mm_Horizontal" H 5538 3900 50  0001 C CNN
+F 3 "" H 5500 4050 50  0001 C CNN
+F 4 "2.5% polystyrene" V 5500 4050 60  0001 C CNN "Type"
+	1    5500 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C26
+U 1 1 59836A83
+P 5900 4650
+F 0 "C26" H 5650 4700 50  0000 L CNN
+F 1 "220p" H 5600 4600 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P10.00mm_Horizontal" H 5938 4500 50  0001 C CNN
+F 3 "" H 5900 4650 50  0001 C CNN
+F 4 "2.5% polystyrene" V 5900 4650 60  0001 C CNN "Type"
+	1    5900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C28
+U 1 1 59836A8C
+P 7200 4450
+F 0 "C28" H 7315 4496 50  0000 L CNN
+F 1 ".001uF" H 7315 4405 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P10.00mm_Horizontal" H 7238 4300 50  0001 C CNN
+F 3 "" H 7200 4450 50  0001 C CNN
+F 4 "2.5% polystyrene" V 7200 4450 60  0001 C CNN "Type"
+	1    7200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 59836A93
+P 6950 4150
+F 0 "R19" V 6743 4150 50  0000 C CNN
+F 1 "27K" V 6834 4150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6880 4150 50  0001 C CNN
+F 3 "" H 6950 4150 50  0001 C CNN
+	1    6950 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L TL084 U16
+U 4 1 59836A9A
+P 6400 4150
+F 0 "U16" H 6400 4000 50  0000 L CNN
+F 1 "TL084" H 6400 3900 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 6350 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl082.pdf" H 6450 4350 50  0001 C CNN
+	4    6400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P TP4
+U 1 1 59836AA1
+P 7200 3750
+F 0 "TP4" H 7258 3824 50  0000 L CNN
+F 1 "TEST_1P" H 7258 3779 50  0001 L CNN
+F 2 "Connectors:PINTST" H 7400 3750 50  0001 C CNN
+F 3 "" H 7400 3750 50  0001 C CNN
+	1    7200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P TP5
+U 1 1 59836AA8
+P 7500 3750
+F 0 "TP5" H 7558 3824 50  0000 L CNN
+F 1 "TEST_1P" H 7558 3779 50  0001 L CNN
+F 2 "Connectors:PINTST" H 7700 3750 50  0001 C CNN
+F 3 "" H 7700 3750 50  0001 C CNN
+	1    7500 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 7250 3550 0    79   ~ 16
+Eye
+$Comp
+L LM339 U10
+U 2 1 59836AB0
+P 8000 4250
+F 0 "U10" H 8000 4100 50  0000 L CNN
+F 1 "LM339" H 8000 4000 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 7950 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/LM339-N" H 8050 4450 50  0001 C CNN
+	2    8000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR021
+U 1 1 59836AB7
+P 7900 3800
+F 0 "#PWR021" H 7900 3650 50  0001 C CNN
+F 1 "+12V" H 7915 3973 50  0000 C CNN
+F 2 "" H 7900 3800 50  0001 C CNN
+F 3 "" H 7900 3800 50  0001 C CNN
+	1    7900 3800
+	-1   0    0    -1  
+$EndComp
+Text Notes 7550 1700 2    394  ~ 79
+RX FILTER
+$Comp
+L GND #PWR022
+U 1 1 59836ABF
+P 7900 4650
+F 0 "#PWR022" H 7900 4400 50  0001 C CNN
+F 1 "GND" H 7905 4477 50  0000 C CNN
+F 2 "" H 7900 4650 50  0001 C CNN
+F 3 "" H 7900 4650 50  0001 C CNN
+	1    7900 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 59836AC5
+P 7500 3900
+F 0 "#PWR023" H 7500 3650 50  0001 C CNN
+F 1 "GND" H 7505 3727 50  0000 C CNN
+F 2 "" H 7500 3900 50  0001 C CNN
+F 3 "" H 7500 3900 50  0001 C CNN
+	1    7500 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 59836ACB
+P 6150 4450
+F 0 "#PWR024" H 6150 4200 50  0001 C CNN
+F 1 "GND" H 6155 4277 50  0000 C CNN
+F 2 "" H 6150 4450 50  0001 C CNN
+F 3 "" H 6150 4450 50  0001 C CNN
+	1    6150 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR025
+U 1 1 59836AD1
+P 6300 3700
+F 0 "#PWR025" H 6300 3550 50  0001 C CNN
+F 1 "+12V" H 6315 3873 50  0000 C CNN
+F 2 "" H 6300 3700 50  0001 C CNN
+F 3 "" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4400 5350 4400
+Wire Wire Line
+	4550 4800 7700 4800
+Wire Wire Line
+	5650 4400 6050 4400
+Wire Wire Line
+	5900 4250 5900 4500
+Wire Wire Line
+	5350 4050 5250 4050
+Wire Wire Line
+	5250 4050 5250 4400
+Connection ~ 5250 4400
+Connection ~ 5900 4800
+Wire Wire Line
+	6050 4400 6050 4700
+Wire Wire Line
+	6050 4700 6700 4700
+Wire Wire Line
+	6100 4250 5900 4250
+Connection ~ 5900 4400
+Wire Wire Line
+	6700 4700 6700 4150
+Wire Wire Line
+	6700 4150 6800 4150
+Wire Wire Line
+	7100 4150 7700 4150
+Wire Wire Line
+	7200 3750 7200 4300
+Connection ~ 7200 4150
+Wire Wire Line
+	7500 3900 7500 3750
+Wire Wire Line
+	7700 4800 7700 4350
+Connection ~ 7200 4800
+Wire Wire Line
+	7900 4650 7900 4550
+Wire Wire Line
+	7900 3800 7900 3950
+Wire Wire Line
+	6100 4050 5650 4050
+Connection ~ 6700 4150
+Wire Wire Line
+	4550 4400 4850 4400
+Connection ~ 4750 4400
+Wire Wire Line
+	6150 4450 6300 4450
+Wire Wire Line
+	6300 3850 6300 3700
+Text HLabel 4000 4400 0    60   Input ~ 0
+RX_AUDIO
+Text HLabel 4550 4800 0    60   Input ~ 0
+VREF
+Wire Wire Line
+	4000 4400 4250 4400
+Wire Wire Line
+	4750 4400 4750 4500
+Connection ~ 4750 4800
+Wire Wire Line
+	7200 4800 7200 4600
+Text HLabel 8550 4250 2    60   Output ~ 0
+RX_FILTER_OUT
+Wire Wire Line
+	8300 4250 8550 4250
+$EndSCHEMATC

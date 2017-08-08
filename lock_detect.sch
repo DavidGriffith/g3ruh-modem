@@ -1,0 +1,304 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ttl_ieee
+LIBS:dg_misc
+LIBS:g3ruh-modem-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 12
+Title "G3RUH 9600 bps modem for TNC-2"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R27
+U 1 1 59847D6D
+P 7550 3350
+F 0 "R27" H 7619 3396 50  0000 L CNN
+F 1 "10K" H 7619 3305 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7480 3350 50  0001 C CNN
+F 3 "" H 7550 3350 50  0001 C CNN
+	1    7550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR031
+U 1 1 59847D74
+P 7550 3150
+F 0 "#PWR031" H 7550 3000 50  0001 C CNN
+F 1 "+5V" H 7565 3323 50  0000 C CNN
+F 2 "" H 7550 3150 50  0001 C CNN
+F 3 "" H 7550 3150 50  0001 C CNN
+	1    7550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM339 U10
+U 3 1 59847D7A
+P 6650 3350
+F 0 "U10" H 6650 3200 50  0000 L CNN
+F 1 "LM339" H 6650 3100 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 6600 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/LM339-N" H 6700 3550 50  0001 C CNN
+	3    6650 3350
+	1    0    0    1   
+$EndComp
+$Comp
+L LM339 U10
+U 4 1 59847D81
+P 6650 4150
+F 0 "U10" H 6650 4000 50  0000 L CNN
+F 1 "LM339" H 6650 3900 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 6600 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/LM339-N" H 6700 4350 50  0001 C CNN
+	4    6650 4150
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 59847D88
+P 7100 3100
+F 0 "#PWR032" H 7100 2850 50  0001 C CNN
+F 1 "GND" H 7105 2927 50  0000 C CNN
+F 2 "" H 7100 3100 50  0001 C CNN
+F 3 "" H 7100 3100 50  0001 C CNN
+	1    7100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 59847D8E
+P 7000 3850
+F 0 "#PWR033" H 7000 3600 50  0001 C CNN
+F 1 "GND" H 7005 3677 50  0000 C CNN
+F 2 "" H 7000 3850 50  0001 C CNN
+F 3 "" H 7000 3850 50  0001 C CNN
+	1    7000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 JMP9
+U 1 1 59847D94
+P 7250 3750
+F 0 "JMP9" H 7328 3745 50  0000 L CNN
+F 1 "CONN_01X03" H 7328 3700 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7250 3750 50  0001 C CNN
+F 3 "" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 59847D9B
+P 5900 3900
+F 0 "R8" H 5750 3950 50  0000 L CNN
+F 1 "47K" H 5700 3850 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5830 3900 50  0001 C CNN
+F 3 "" H 5900 3900 50  0001 C CNN
+	1    5900 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C22
+U 1 1 59847DA3
+P 5400 3900
+F 0 "C22" H 5515 3946 50  0000 L CNN
+F 1 ".1uF" H 5515 3855 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5438 3750 50  0001 C CNN
+F 3 "" H 5400 3900 50  0001 C CNN
+F 4 "20% monolithic" V 5400 3900 60  0001 C CNN "Type"
+	1    5400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C21
+U 1 1 59847DAB
+P 5000 3900
+F 0 "C21" H 5115 3946 50  0000 L CNN
+F 1 ".1uF" H 5115 3855 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5038 3750 50  0001 C CNN
+F 3 "" H 5000 3900 50  0001 C CNN
+F 4 "20% monolithic" V 5000 3900 60  0001 C CNN "Type"
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 59847DB2
+P 5900 3350
+F 0 "R7" H 5750 3400 50  0000 L CNN
+F 1 "33K" H 5700 3300 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5830 3350 50  0001 C CNN
+F 3 "" H 5900 3350 50  0001 C CNN
+	1    5900 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR034
+U 1 1 59847DB9
+P 5900 3100
+F 0 "#PWR034" H 5900 2950 50  0001 C CNN
+F 1 "+5V" H 5915 3273 50  0000 C CNN
+F 2 "" H 5900 3100 50  0001 C CNN
+F 3 "" H 5900 3100 50  0001 C CNN
+	1    5900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR035
+U 1 1 59847DBF
+P 5900 4100
+F 0 "#PWR035" H 5900 3850 50  0001 C CNN
+F 1 "GND" H 5905 3927 50  0000 C CNN
+F 2 "" H 5900 4100 50  0001 C CNN
+F 3 "" H 5900 4100 50  0001 C CNN
+	1    5900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 59847DC5
+P 4600 3600
+F 0 "R6" V 4700 3550 50  0000 L CNN
+F 1 "100K" V 4500 3500 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4530 3600 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74HC86 U6
+U 2 1 59847DCC
+P 3700 3600
+F 0 "U6" H 3700 3500 50  0000 C CNN
+F 1 "74HC86" H 3750 3700 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 3700 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn54hc86" H 3700 3600 50  0001 C CNN
+	2    3700 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 7750 1650 2    394  ~ 79
+LOCK DETECT
+$Comp
+L +12V #PWR036
+U 1 1 59847DD4
+P 6750 4450
+F 0 "#PWR036" H 6750 4300 50  0001 C CNN
+F 1 "+12V" H 6765 4623 50  0000 C CNN
+F 2 "" H 6750 4450 50  0001 C CNN
+F 3 "" H 6750 4450 50  0001 C CNN
+	1    6750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3450 6350 4050
+Wire Wire Line
+	7100 3050 6550 3050
+Wire Wire Line
+	6550 3850 7000 3850
+Wire Wire Line
+	6750 3650 6550 3650
+Wire Wire Line
+	6950 4150 7450 4150
+Wire Wire Line
+	7450 4150 7450 3850
+Wire Wire Line
+	6950 3350 7450 3350
+Wire Wire Line
+	7450 3350 7450 3650
+Wire Wire Line
+	7450 3750 8100 3750
+Wire Wire Line
+	7550 3750 7550 3500
+Connection ~ 7550 3750
+Wire Wire Line
+	7550 3200 7550 3150
+Wire Wire Line
+	6350 3250 6150 3250
+Wire Wire Line
+	6150 3250 6150 4250
+Wire Wire Line
+	6150 4250 6350 4250
+Wire Wire Line
+	5400 3750 6350 3750
+Wire Wire Line
+	5900 3500 5900 3750
+Connection ~ 6350 3750
+Connection ~ 5900 3750
+Wire Wire Line
+	5900 3100 5900 3200
+Wire Wire Line
+	5000 4050 5900 4050
+Connection ~ 5900 4050
+Connection ~ 5400 4050
+Wire Wire Line
+	4750 3600 6150 3600
+Connection ~ 6150 3600
+Connection ~ 5000 3600
+Wire Wire Line
+	5000 3600 5000 3750
+Wire Wire Line
+	5900 4050 5900 4100
+Wire Wire Line
+	7100 3050 7100 3100
+Wire Wire Line
+	4300 3600 4450 3600
+Wire Wire Line
+	6550 4450 6750 4450
+Text HLabel 8100 3750 2    60   Output ~ 0
+DCD
+Text HLabel 2400 3700 0    60   Input ~ 0
+~RX_CLOCK
+Wire Wire Line
+	2400 3700 3100 3700
+Text HLabel 2400 3500 0    60   Input ~ 0
+ZERO_CROSSING
+Wire Wire Line
+	2400 3500 3100 3500
+$Comp
+L +12V #PWR037
+U 1 1 598492B6
+P 6750 3650
+F 0 "#PWR037" H 6750 3500 50  0001 C CNN
+F 1 "+12V" H 6765 3823 50  0000 C CNN
+F 2 "" H 6750 3650 50  0001 C CNN
+F 3 "" H 6750 3650 50  0001 C CNN
+	1    6750 3650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

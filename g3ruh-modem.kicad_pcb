@@ -2,8 +2,8 @@
 
   (general
     (links 330)
-    (no_connects 1)
-    (area 68.621429 43.294999 237.708572 143.445001)
+    (no_connects 0)
+    (area 73.074999 43.294999 233.225001 143.445001)
     (thickness 1.6)
     (drawings 4)
     (tracks 948)
@@ -14,14 +14,14 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.25)
     (user_trace_width 0.254)
     (user_trace_width 0.508)
     (trace_clearance 0.2)
@@ -65,7 +65,7 @@
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
     (grid_origin 229.55 137.77)
-    (visible_elements FFFFF709)
+    (visible_elements FFFFF729)
     (pcbplotparams
       (layerselection 0x00030_ffffffff)
       (usegerberextensions false)
@@ -1492,7 +1492,7 @@
       (net 2 +5V))
     (model ${KISYS3DMOD}/Capacitors_THT.3dshapes/CP_Radial_Tantal_D5.0mm_P5.00mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.393701 0.393701 0.393701))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1647,7 +1647,7 @@
       (net 228 "/AUDIO OUT/DAC"))
     (model ${KISYS3DMOD}/Capacitors_THT.3dshapes/CP_Radial_Tantal_D5.0mm_P5.00mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.393701 0.393701 0.393701))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1683,7 +1683,7 @@
       (net 18 "Net-(C32-Pad1)"))
     (model ${KISYS3DMOD}/Capacitors_THT.3dshapes/CP_Radial_Tantal_D5.0mm_P5.00mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.393701 0.393701 0.393701))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )

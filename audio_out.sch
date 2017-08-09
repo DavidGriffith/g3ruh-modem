@@ -93,7 +93,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 4000 6100 4000
 Connection ~ 3450 4600
-Text Notes 7600 3300 0    79   ~ 16
+Text Notes 6750 3000 0    79   ~ 16
 AUDIO LOOPBACK
 Wire Wire Line
 	3100 4000 3750 4000
@@ -199,7 +199,7 @@ L C C29
 U 1 1 59858727
 P 3450 4350
 F 0 "C29" H 3600 4400 50  0000 L CNN
-F 1 ".0033" H 3550 4300 50  0000 L CNN
+F 1 ".0033uF" H 3550 4300 50  0000 L CNN
 F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P10.00mm_Horizontal" H 3488 4200 50  0001 C CNN
 F 3 "" H 3450 4350 50  0001 C CNN
 F 4 "2.5% polystyrene" H 3450 4350 60  0001 C CNN "Type"
@@ -245,7 +245,7 @@ F 1 "10K" H 6580 4405 50  0000 R CNN
 F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296P" H 6650 4450 50  0001 C CNN
 F 3 "https://www.bourns.com/pdfs/3296.pdf" H 6650 4450 50  0001 C CNN
 	1    6650 4450
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7200 4450 7500 4450
@@ -284,9 +284,9 @@ F 3 "" H 8300 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 3750 8350 3700
+	8350 3350 8350 3750
 Wire Wire Line
-	8450 3750 8350 3750
+	8350 3750 8450 3750
 Wire Wire Line
 	8700 4350 8800 4350
 Connection ~ 8150 3850
@@ -306,17 +306,6 @@ Wire Wire Line
 Connection ~ 8150 4350
 Wire Wire Line
 	8100 4350 8400 4350
-$Comp
-L +5V #PWR057
-U 1 1 59858769
-P 8350 3700
-F 0 "#PWR057" H 8350 3550 50  0001 C CNN
-F 1 "+5V" H 8365 3873 50  0000 C CNN
-F 2 "" H 8350 3700 50  0001 C CNN
-F 3 "" H 8350 3700 50  0001 C CNN
-	1    8350 3700
-	1    0    0    -1  
-$EndComp
 $Comp
 L CONN_01X02 JMP6
 U 1 1 5985876F
@@ -386,4 +375,8 @@ Text Notes 4450 3400 0    79   ~ 16
 ANTI-ALIAS FILTER
 Text Notes 8100 1750 2    394  ~ 79
 AUDIO OUTPUT
+Text HLabel 8800 3350 2    60   Output ~ 0
+AUDIO_LOOPBACK_OUT
+Wire Wire Line
+	8800 3350 8350 3350
 $EndSCHEMATC

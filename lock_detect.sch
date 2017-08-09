@@ -120,7 +120,7 @@ F 1 "CONN_01X03" H 7328 3700 50  0001 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7250 3750 50  0001 C CNN
 F 3 "" H 7250 3750 50  0001 C CNN
 	1    7250 3750
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R8

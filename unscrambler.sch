@@ -213,9 +213,9 @@ U 1 1 5984DB84
 P 8850 3650
 F 0 "C23" H 8965 3696 50  0000 L CNN
 F 1 ".001uF" H 8965 3605 50  0000 L CNN
-F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P10.00mm_Horizontal" H 8888 3500 50  0001 C CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 8888 3500 50  0001 C CNN
 F 3 "" H 8850 3650 50  0001 C CNN
-F 4 "2.5% polystyrene" V 8850 3650 60  0001 C CNN "Type"
+F 4 "20% monolithic ceramic" V 8850 3650 60  0001 C CNN "Type"
 	1    8850 3650
 	1    0    0    -1  
 $EndComp
@@ -414,7 +414,7 @@ F 0 "C12" V 4150 5100 50  0000 L CNN
 F 1 ".1uF" V 3850 5100 50  0000 L CNN
 F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4038 5000 50  0001 C CNN
 F 3 "" H 4000 5150 50  0001 C CNN
-F 4 "20% Monolithic" H 4000 5150 60  0001 C CNN "Type"
+F 4 "20% Monolithic Ceramic" H 4000 5150 60  0001 C CNN "Type"
 	1    4000 5150
 	0    1    1    0   
 $EndComp

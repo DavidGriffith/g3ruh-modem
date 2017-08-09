@@ -36,7 +36,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 12 12
-Title ""
+Title "G3RUH 9600 bps modem for TNC-2"
 Date ""
 Rev ""
 Comp ""

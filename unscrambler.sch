@@ -46,17 +46,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R R5
-U 1 1 5984DB20
-P 1550 3800
-F 0 "R5" H 1480 3754 50  0000 R CNN
-F 1 "4K7" H 1480 3845 50  0000 R CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1480 3800 50  0001 C CNN
-F 3 "" H 1550 3800 50  0001 C CNN
-	1    1550 3800
-	-1   0    0    1   
-$EndComp
-$Comp
 L 74HC74 U5
 U 1 1 5984DB27
 P 2450 4250
@@ -98,17 +87,6 @@ F 1 "+5V" H 2615 4973 50  0000 C CNN
 F 2 "" H 2600 4800 50  0001 C CNN
 F 3 "" H 2600 4800 50  0001 C CNN
 	1    2600 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR040
-U 1 1 5984DB41
-P 1550 3550
-F 0 "#PWR040" H 1550 3400 50  0001 C CNN
-F 1 "+5V" H 1565 3723 50  0000 C CNN
-F 2 "" H 1550 3550 50  0001 C CNN
-F 3 "" H 1550 3550 50  0001 C CNN
-	1    1550 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -283,15 +261,12 @@ NoConn ~ 6100 4300
 NoConn ~ 6100 4200
 NoConn ~ 6100 4050
 NoConn ~ 7600 4550
-Connection ~ 1550 4050
 Wire Wire Line
 	1200 4050 1850 4050
 Wire Wire Line
 	2450 4800 2600 4800
 Wire Wire Line
 	2450 3550 2450 3700
-Wire Wire Line
-	1550 3550 1550 3650
 Wire Wire Line
 	3400 4000 3350 4000
 Wire Wire Line
@@ -371,8 +346,6 @@ Wire Wire Line
 Connection ~ 8850 3500
 Wire Wire Line
 	8850 3800 8850 3850
-Wire Wire Line
-	1550 4050 1550 3950
 Text HLabel 1200 4050 0    60   Input ~ 0
 RX_FILTER
 Text HLabel 10050 3500 2    60   Output ~ 0
